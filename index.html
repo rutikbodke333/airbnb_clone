@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb | Holiday, rental, cabins </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* "Helvetica Neue", sans-serif; */
+}
+.logo img {
+  height: 85px;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  /* margin-bottom: 10px !important; */
+}
+
+.hr-tag {
+  margin-top: 21px;
+  margin-bottom: 25px;
+  color: red !important;
+}
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* margin: 20px 10px 0 0; */
+  height: 85px !important;
+  padding: 40px 20px 43px 25px;
+}
+.container nav .center ul {
+  display: flex;
+  width: 400px;
+  /* height: 40px; */
+  gap: 2px;
+  /* justify-content: space-between; */
+  /* border: 1px solid red; */
+  /* margin: 0 10px; */
+  margin-left: 220px;
+}
+.container nav .center ul li span {
+  /* background-color: red; */
+  color: #3d3d3d;
+  font-weight: 550;
+}
+.container nav .center ul li {
+  list-style: none;
+  color: #8c8c8c;
+  font-size: 15.5px;
+  font-weight: 500;
+  cursor: pointer;
+  /* margin: 0 1px; */
+  padding: 13px 17px 12px 17px;
+  /* background-color: red; */
+  border-radius: 27px;
+  /* transition: 1s ease-in-out; */
+}
+.container nav .center ul .hvr {
+  transition: 0.1s ease-in-out;
+}
+.container nav .center ul .hvr:hover {
+  background-color: rgb(246, 246, 248);
+  color: black;
+}
+.container nav .center ul .hvr a:hover {
+  background-color: rgb(246, 246, 248);
+  color: black;
+}
+
+.container nav .center ul li a {
+  text-decoration: none;
+  color: #8c8c8c;
+  font-size: 15.5px;
+}
+.container nav .right {
+  /* border: 1px solid black; */
+  width: 320px;
+  display: flex;
+  align-items: center;
+  /* margin-left: 150px; */
+  /* justify-content: space-around; */
+}
+
+.container nav .right a {
+  color: #7c7979;
+  font-size: 14.5px;
+  text-decoration: none;
+  font-weight: 550;
+  /* background-color: red; */
+  padding: 13px 17px 12px 17px;
+  border-radius: 30px;
+  margin-right: 2px;
+  /* color: red; */
+}
+
+.container nav .right a:hover {
+  background-color: rgb(246, 246, 248);
+  color: black;
+}
+.container nav .right .right_icn {
+  border: 1px solid #dddddd;
+  padding: 8.6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.container nav .right .icon1 {
+  font-weight: 550;
+  /* background-color: red; */
+  padding: 15px;
+  border-radius: 30px;
+  margin-right: 5px;
+}
+.container nav .right .icon1:hover {
+  background-color: rgb(246, 246, 248);
+  color: black;
+}
+.container nav .right .right_icn .icon2 {
+  margin-right: 15px;
+  margin-left: 5px;
+  font-size: 15.4px;
+
+  /* color: red; */
+}
+.container nav .right .right_icn .icon3 {
+  font-size: 30px;
+  color: #646161;
+}
+.search_con {
+  border: 1px solid #e7e7e2;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* width: 90%; */
+  gap: 2px;
+  margin: 0 270px;
+  border-radius: 100px;
+  box-shadow: 1px 1px 10px rgb(216, 213, 213);
+  /* border-bottom: 1px solid red; */
+}
+
+.search_con .sea_01 p {
+  font-size: 14px;
+  color: #767676;
+  cursor: pointer;
+}
+.search_con .sea_01 h4 {
+  color: #6b6969;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: light;
+  margin-bottom: 4px;
+}
+.search_con .sea_02 p {
+  font-size: 14px;
+  /* color: red; */
+  color: #7e7c7c;
+
+  cursor: pointer;
+}
+.search_con .sea_02 h4 {
+  color: #6b6969;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.search_con .sea_03 p {
+  font-size: 14px;
+  /* color: red; */
+  color: #767676;
+
+  cursor: pointer;
+}
+.search_con .sea_03 h4 {
+  color: #6b6969;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.search_con .sea_04 p {
+  font-size: 14px;
+  /* color: red; */
+  color: #767676;
+
+  cursor: pointer;
+}
+.search_con .sea_04 h4 {
+  color: #6b6969;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+.search_con .sea_04 {
+  display: flex;
+}
+.search_con .sea_01 {
+  padding: 15px 150px 15px 32px;
+  border-radius: 100px;
+  /* background-color: red; */
+  /* border-right: 1px solid blue; */
+}
+.search_con .sea_01:hover {
+  background-color: #e7e7e2;
+}
+.search_con .sea_02 {
+  padding: 15px 47px 15px 24px;
+  border-radius: 100px;
+}
+.search_con .sea_02:hover {
+  background-color: #e7e7e2;
+}
+.search_con .sea_03 {
+  padding: 15px 47px 15px 24px;
+  border-radius: 100px;
+}
+.search_con .sea_03:hover {
+  background-color: #e7e7e2;
+}
+.search_con .sea_04 {
+  padding: 8px 10px 10px 24px;
+  border-radius: 100px;
+  display: flex;
+  /* gap: 10px; */
+  justify-content: center;
+  align-items: center;
+}
+.search_con .sea_04:hover {
+  background-color: #e7e7e2;
+}
+.se-icon {
+  margin-left: 76.5px;
+}
+.icon4 {
+  font-size: 15px;
+  color: white;
+  padding: 16px;
+  background-color: #ff385c;
+  border-radius: 50px;
+}
+/* img-bar */
+.img-bar {
+  /* background-color: red; */
+  margin: 10px 45px 0 45px;
+}
+.img-bar img {
+  height: 24px;
+  /* margin: 0 10px; */
+  margin-bottom: 8px;
+  /* color: red !important; */
+  fill: red;
+}
+.img-bar {
+  display: flex;
+  margin-top: 23px;
+}
+.sub-img-bar {
+  margin-right: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* color: #E7E7E2; */
+}
+.sub-img-bar p:hover {
+  color: black;
+  cursor: pointer;
+}
+.sub-img-bar p {
+  font-size: 12.5px;
+  color: #8a8a87;
+  font-weight: 550;
+}
+.sub-img-icons i {
+  margin-top: 6px;
+  border: 1px solid #cac5c5;
+  padding: 8px 10px 8px 10px;
+  border-radius: 40px;
+}
+svg {
+  color: blue; /* The SVG elements will inherit this color */
+}
+
+/* sub-img-card */
+.s-img-bar img {
+  width: 296px;
+  height: 286px;
+  border-radius: 12px;
+}
+
+.sub-img-card {
+  display: grid;
+  /* width: 9%; */
+  /* height: 10%; */
+  /* background-color: black; */
+  /* border: 1px solid black; */
+  margin: 30px 45px 51px 45px;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-row: repeat(5,284.5); */
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 25px;
+  row-gap: 30px;
+  /* margin-top: 30px; */
+}
+.s-img-bar {
+  /* border: 1px solid red; */
+  height: 375.28px;
+  width: 295px;
+  /* border-radius: 15px; */
+}
+.s-img-bar h4 {
+  font-size: 15.4px;
+  color: #222222;
+  font-weight: bold;
+  margin: 10px 0 3px 0;
+}
+.s-img-bar p {
+  color: #807c7c;
+  font-size: 15.4px;
+}
+.s-img-bar h5 {
+  font-size: 14.7px;
+  color: #222222;
+  font-weight: 550;
+  margin-top: 3px;
+}
+.sub-img-card2 {
+  display: grid;
+  margin: 22px 45px 80px 45px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 25px;
+  row-gap: 30px;
+}
+.main-img-card2 h1 {
+  margin-left: 45px;
+  color: #222222;
+  font-size: 30px;
+}
+/* content01 */
+.content04 > .con_04_ul_01 {
+  margin-top: 30px;
+  /* background-color: red; */
+}
+
+/* contect03 section */
+.con04_ul_03 {
+  margin-bottom: 50px;
+}
+.content03 {
+  margin: 0 45px 0 45px;
+}
+.content03 h3 {
+  font-size: 22.5px;
+  color: #222222;
+  font-weight: light;
+}
+.cont_03_anchor {
+  /* height: 500px; */
+  margin-top: 20px;
+  /* border: 1px solid red; */
+}
+.cont_03_anchor > hr {
+  color: red;
+  font-weight: normal;
+}
+.content03 > .cont_03_anchor ul {
+  /* background-color: red; */
+  display: flex;
+  align-items: flex-start;
+  /* padding: 0; */
+  margin-bottom: 15px;
+}
+.content03 > .cont_03_anchor ul li {
+  /* margin: 0 10px; */
+
+  margin-right: 28px;
+  list-style: none;
+}
+.content03 > .cont_03_anchor ul li a {
+  text-decoration: none;
+  color: #575555;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* content04 */
+footer {
+  /* background-color: red; */
+  background-color: #f7f7f7;
+  padding-top: 50px;
+}
+.content04 {
+  margin: 0 45px 0 45px;
+  /* background-color: #F7F7F7; */
+}
+.content04 ul {
+  display: flex;
+  justify-content: space-between;
+}
+.content04 > ul > .con04_li {
+  /* padding: ; */
+  margin-right: 5px;
+  list-style: none;
+  /* border: 1px solid red; */
+  width: 220px;
+  /* height: 50%; */
+}
+.con04_li > .con04_li_01 > a {
+  color: rgb(80, 77, 77);
+  font-weight: bold;
+  /* font-weight: bold; */
+  /* background-color: red; */
+}
+.con04_li > .con04_li_02 > a {
+  color: #928e8e;
+  /* font-weight: bold; */
+  /* background-color: red; */
+}
+.content04 ul .con04_li a {
+  font-size: 14px;
+  text-decoration: none;
+}
+.con04_ul_02 {
+  margin-top: 20px;
+}
+.con04_ul_03 {
+  margin-top: 20px;
+}
+.container > .hr02 {
+  margin: 40px 0;
+}
+
+/* content 05 */
+.cont05 {
+  display: flex;
+  margin: 0 45px 0 45px;
+  gap: 7px;
+}
+.cont05 ul {
+  /* border: 1px solid red; */
+  width: 600px;
+}
+.cont05 ul li {
+  list-style: none;
+  margin: 13px 0;
+}
+.cont05 ul li a {
+  text-decoration: none;
+  font-size: 14.5px;
+  /* color: red; */
+  color: #6e6c6c;
+}
+
+.cont05 > ul > .con05_li {
+  color: rgb(70, 68, 68);
+  margin-top: 46px !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* hr 03 */
+.hr03 {
+  margin: 45px 45px 50px 45px;
+}
+/* last content */
+.last-con {
+  display: flex;
+  margin: 0 45px 50px 45px;
+  justify-content: space-between;
+  padding-bottom: 22px;
+}
+.last-con ul li {
+  list-style: none;
+  font-size: 14px;
+}
+.last-con ul li a {
+  text-decoration: none;
+  /* font-size: 14px; */
+  /* color: #817e7e ; */
+}
+
+.last-con > .last-left > ul > li > a {
+  /* color: red; */
+  color: #575555;
+}
+
+.last-con > .right-left > ul > li > a {
+  /* color: red; */
+  color: black;
+}
+
+.last-con .last-left ul {
+  display: flex;
+  gap: 20px;
+}
+
+.last-con .last-left ul li {
+  /* margin-right: 10px; */
+}
+
+.last-con .last-right ul {
+  display: flex;
+  gap: 20px;
+}
+
+.last-con .last-right ul li .last_icon03 {
+  /* margin-right: 20px; */
+  font-size: 18px !important;
+  color: black;
+}
+
+.last-con .last-right ul li .last_icon01 {
+  /* margin-right: 20px; */
+  font-size: 14px !important;
+  margin-right: 3px;
+}
+
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>                                                                                                                                                                                                                                
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="image copy.png" alt="" />
+        </div>
+        <div class="center">
+          <ul>
+            <li><span>Stays</span></li>
+            <li class="hvr">Experience</li>
+            <li class="hvr"><a href="#">Online Experience</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <a href="#">Airbnb your home </a>
+          <i class="fa-solid fa-globe icon1"></i>
+          <div class="right_icn">
+            <i class="fa-solid fa-bars icon2"></i>
+            <i class="fa-solid fa-circle-user icon3"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="search_con">
+        <div class="sea_01">
+          <h4>Where</h4>
+          <p>Search destinations</p>
+        </div>
+        <div class="sea_02">
+          <h4>Check in</h4>
+          <p>Add dates</p>
+        </div>
+        <div class="sea_03">
+          <h4>Check out</h4>
+          <p>Add dates</p>
+        </div>
+        <div class="sea_04">
+          <div class="se-text">
+            <h4>Who</h4>
+            <p>Add guests</p>
+          </div>
+          <div class="se-icon">
+            <i class="fa-solid fa-magnifying-glass icon4"></i>
+          </div>
+        </div>
+      </div>
+      <div class="hr_tag01"></div>
+      <!-- <hr class="hr-tag" /> -->
+      <div class="img-bar">
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png"
+            alt=""
+          />
+          <p>Icons</p>
+        </div>
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg"
+            alt=""
+          />
+          <p>Amazing tool</p>
+        </div>
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+            alt=""
+          />
+          <p>Amazing views</p>
+        </div>
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+            alt=""
+          />
+          <p>Forms</p>
+        </div>
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/957f8022-dfd7-426c-99fd-77ed792f6d7a.jpg"
+            alt=""
+          />
+          <p>Surfing</p>
+        </div>
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/4d4a4eba-c7e4-43eb-9ce2-95e1d200d10e.jpg"
+            alt=""
+          />
+          <p>Tree House</p>
+        </div>
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg"
+            alt=""
+          />
+          <p>Lakefront</p>
+        </div>
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg"
+            alt=""
+          />
+          <p>OMG!</p>
+        </div>
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg"
+            alt=""
+          />
+          <p>Beachfront</p>
+        </div>
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg"
+            alt=""
+          />
+          <p>Luxe</p>
+        </div>
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/248f85bf-e35e-4dc3-a9a1-e1dbff9a3db4.jpg"
+            alt=""
+          />
+          <p>Countryside</p>
+        </div>
+        <!-- <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/9a2ca4df-ee90-4063-b15d-0de7e4ce210a.jpg"
+            alt=""
+          />
+          <p>Off-the-grid</p>
+        </div> -->
+        <!-- <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg"
+            alt=""
+          />
+          <p>casel</p>
+        </div> -->
+
+        <!-- <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/ed8b9e47-609b-44c2-9768-33e6a22eccb2.jpg"
+            alt=""
+          />
+          <p>Buliding</p>
+        </div> -->
+
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/ee9e2a40-ffac-4db9-9080-b351efc3cfc4.jpg"
+            alt=""
+          />
+          <p>Islands</p>
+        </div>
+
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/0ff9740e-52a2-4cd5-ae5a-94e1bfb560d6.jpg"
+            alt=""
+          />
+          <p>Container</p>
+        </div>
+        <div class="sub-img-bar">
+          <img
+            src="https://a0.muscache.com/pictures/c0fa9598-4e37-40f3-b734-4bd0e2377add.jpg"
+            alt=""
+          />
+          <p>Key</p>
+        </div>
+
+        <div class="sub-img-icons">
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+
+      <div class="main-img-card">
+        <div class="sub-img-card">
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEzMTA4MzUyMzk5Mjc3MDU5Nw%3D%3D/original/ced15ffe-0ab5-48cf-a189-dbdeaaf04387.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+            <h4>Make core memories with Inside Out 2</h4>
+            <p>Hosted by Joy</p>
+            <h5>Booking closed</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEzMTA4OTQ5ODA0MDcwMTE4Mw%3D%3D/original/4f7a276e-9995-4b32-bda6-300de0619b25.png?im_w=1440&im_q=highq"
+              alt=""
+            />
+
+            <h4>Stay in Prince’s Purple Rain house</h4>
+            <p>LisaHosted by Wendy and Lisa</p>
+            <h5>Coming August</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEzMTA4NzY0ODgzNzUzNjQzNw%3D%3D/original/cda19e4c-ae11-47b1-831b-a29f94ab76dc.png?im_w=1440&im_q=highq"
+              alt=""
+            />
+
+            <h4>Go VIP with Kevin Hart</h4>
+            <p>Hosted by Kevin HartHosted by Kevin Hart</p>
+            <h5>Coming August</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyNjMyMzc5Mzc2MTc3OTEzMg%3D%3D/original/01819c16-43a1-4aee-9957-9edce6eb8e16.png?im_w=1440&im_q=highq"
+            />
+            <h4>Join a living room session with Doja</h4>
+            <p>Hosted by Doja CatHosted by Doja Cat</p>
+            <h5>Coming October</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE2MjI1MjI0NDQ0MzYzMjM4Mg%3D%3D/original/ae3426d1-fba4-44d4-bed2-690426f25f7a.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+
+            <h4>Open the Olympic Games at Musée</h4>
+            <p>Hosted by Mathieu Lehanneur</p>
+            <h5>Booking closed</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyNjIzMTk3NDU3MjE4Nzg2NA%3D%3D/original/f4cbe542-3ce0-4c6f-a8f1-d2120c1b2420.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+
+            <h4>Train at the X-Mansion</h4>
+            <p>Hosted by JubileeHosted by Jubilee</p>
+            <h5>Sold out</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyNTQ0NTEyMzEwMTI3NDg1MQ%3D%3D/original/bd73f0f8-9057-4bbc-ad70-1db13eb5c03f.png?im_w=1440&im_q=highq"
+              alt=""
+            />
+            <h4>Wake up in the Musée d’Orsay</h4>
+            <p>Hosted by Mathieu Lehanneur</p>
+            <h5>Sold out</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE0ODQ2MDI1NTE4MDMzOTQ4MQ%3D%3D/original/c92634d0-4964-439a-905d-b9129af14d34.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+            <h4>Design your Incredibles Supersuit</h4>
+            <p>Hosted by ModeHosted by Edna Mode</p>
+            <h5>Sold out</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEzMTg2NzMzNDc0MDk1Nzg4NA%3D%3D/original/b676fc8d-8250-4df0-a7cb-728b0486e371.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+            <h4>Crash at the X-Mansion</h4>
+            <p>Hosted by JubileeHosted by Jubilee</p>
+            <h5>Sold out</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEzMTA4NjI3OTI1MjIxNDQyOA%3D%3D/original/bc989f2d-eca8-4bcf-a9b0-b70b8e685a64.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+
+            <h4>Live like Bollywood star Janhvi Kapoor</h4>
+            <p>Hosted by Janhvi KapoorHosted by Janhvi Kapoor</p>
+            <h5>Sold out</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyNjI0NzUwMDUwMTg2Mzg5MA%3D%3D/original/99417998-fa44-4c75-ae77-287c1468977b.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+            <h4>Go on tour with Feid</h4>
+            <p>Hosted by FeidHosted by Feid</p>
+            <h5>Sold out</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEzMTA3NzgxMzcwNzcxOTUzNQ%3D%3D/original/872f434b-9348-4ff1-8c6f-754fdbab4010.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+
+            <h4>Game with Khaby Lame</h4>
+            <p>Hosted by Khaby LameHosted by Khaby Lame</p>
+            <h5>Sold out</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyNjE4NTg5MzIzNjI0NjI2MA%3D%3D/original/e6b26733-2c15-47d9-b097-6968b39bb697.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+            <h4>Drift off in the Up house</h4>
+            <p>Hosted by Carl FredricksenHosted by Carl Fredricksen</p>
+            <h5>Sold out</h5>
+          </div>
+        </div>
+      </div>
+      <div class="main-img-card2">
+        <h1>Past experiences</h1>
+        <div class="sub-img-card2">
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyMzIwMTE1Njc3Njg0MTIzOQ%3D%3D/original/fb9dcb8d-7fa5-402f-91ae-fa2a26e9f097.png?im_w=1440&im_q=highq"
+              alt=""
+            />
+            <h4>Spend the night in the Ferrari Museum</h4>
+            <p>Hosted by Marc GenéHosted by Marc</p>
+            <h5>Sold out</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-881808599061267756/original/b16970cf-1d55-4edd-bb1f-e1735d0a228e.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+
+            <h4>Shrek’s Swamp</h4>
+            <p>Hosted by DonkeyHosted by Donkey</p>
+            <h5>Sold out</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-857387972692815761/original/d106e0ef-f825-4ff8-baf7-86256a54fbd5.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+
+            <h4>Barbie’s Malibu DreamHouse, Ken’s</h4>
+            <p>Hosted by KenHosted by Ken</p>
+            <h5>Sold out</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-694055224756906854/original/76f85a0c-b3e2-4f1d-9aa9-d7838f2393c6.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+
+            <h4>Ted Lasso’s Favorite Pub</h4>
+            <p>Ted Lasso’s Favorite Pub</p>
+            <h5>Sold out</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-782615921189136934/original/c67f78f1-5807-449a-9a88-753b7fa62d6a.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+            <h4>Houseplant Retreat</h4>
+            <p>Hosted by Seth RogenHosted by Seth</p>
+            <h5>Sold out</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-53274539/original/365299e3-f926-47ee-bcbf-606d6a0370b9.jpeg?im_w=1440&im_q=highq"
+              alt=""
+            />
+            <h4>Home Alone Holiday</h4>
+            <p>Hosted by BuzzHosted by Buzz</p>
+            <h5>Sold out</h5>
+          </div>
+          <div class="s-img-bar">
+            <img
+              src="https://a0.muscache.com/im/pictures/be0957a9-da56-47d6-89ca-223b6e75321a.jpg?im_w=1440&im_q=highq"
+              alt=""
+            />
+
+            <h4>The Last Blockbuster</h4>
+            <p>Hosted by SandiHosted by Sandi</p>
+            <h5>Sold out</h5>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="content03">
+          <h3>Inspiration for future getaways</h3>
+          <div class="cont_03_anchor">
+            <ul class="con_ul">
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Arts & culture</a></li>
+              <li><a href="#">Outdoors</a></li>
+              <li><a href="#">Mountains</a></li>
+              <li><a href="#">Beach</a></li>
+              <li><a href="#">Unique stays</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Things to do</a></li>
+            </ul>
+            <hr />
+          </div>
+        </div>
+        <div class="content04">
+          <ul class="con_04_ul_01">
+            <div class="con04_li">
+              <li class="con04_li_01"><a href="">Canmore</a></li>
+              <li class="con04_li_02"><a href="">Chalet rentals</a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01"><a href=""> Benalmádena</a></li>
+              <li class="con04_li_02"><a href=""> House rentals </a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01"><a href="">Marbella </a></li>
+              <li class="con04_li_02"><a href="">Cottage rentals </a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01"><a href="">Mijas </a></li>
+              <li class="con04_li_02"><a href="">Holiday rentals </a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01"><a href="">Prescott</a></li>
+              <li class="con04_li_02"><a href="">Cottage rentals </a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01"><a href="">Scottsdale</a></li>
+              <li class="con04_li_02" ><a href="">Flat rentals </a></li>
+            </div>
+          </ul>
+          <ul class="con04_ul_02">
+            <div class="con04_li">
+              <li class="con04_li_01" ><a href="">Tucson</a></li>
+              <li class="con04_li_02" ><a href="">Apartment rentals </a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01" ><a href="">Jasper </a></li>
+              <li class="con04_li_02" ><a href="">Cabin rentals </a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01" ><a href="">Mountain View </a></li>
+              <li class="con04_li_02" ><a href="">Pet-friendly rentals </a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01" ><a href="">Devonport </a></li>
+              <li class="con04_li_02" ><a href=""> Cottage rentals </a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01" ><a href="">Mallacoota</a></li>
+              <li class="con04_li_02" ><a href="">Pet-friendly rentals </a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01" ><a href="">Ibiza</a></li>
+              <li class="con04_li_02" ><a href=""> Holiday rentals </a></li>
+            </div>
+          </ul>
+          <ul class="con04_ul_03">
+            <div class="con04_li">
+              <li  class="con04_li_01"  ><a href="">Anaheim</a></li>
+              <li class="con04_li_02" ><a href=""> Apartment rentals </a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01" ><a href="">Monterey</a></li>
+              <li class="con04_li_02" ><a href=""> Holiday rentals</a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01" ><a href="">Paso Robles</a></li>
+              <li class="con04_li_02" ><a href="">Cottage rentals</a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01" ><a href="">Santa Barbara </a></li>
+              <li class="con04_li_02" ><a href="">Pet-friendly rentals </a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01" ><a href="">Sonoma </a></li>
+              <li class="con04_li_02" ><a href="">Rentals with pools </a></li>
+            </div>
+            <div class="con04_li">
+              <li class="con04_li_01" >
+                <a href="">Show more <i class="fa-solid fa-angle-down"></i></a>
+              </li class="con04_li_02" >
+            </div>
+          </ul>
+        </div>
+        <hr class="hr02" />
+        <div class="cont05">
+          <ul>
+            <!-- <h5>Support</h5> -->
+            <li class="con05_li">Support</li>
+            <li><a href="">Help Centre</a></li>
+            <li><a href="">AirCover</a></li>
+            <li><a href="">Anti-discrimination</a></li>
+            <li><a href="">Disability support</a></li>
+            <li><a href="">Cancellation options</a></li>
+            <li><a href="">Report neighbourhood concern</a></li>
+          </ul>
+          <ul>
+            <li class="con05_li">Hosting</li>
+
+            <li><a href=""> Airbnb your home </a></li>
+            <li><a href="">AirCover for Hosts </a></li>
+            <li><a href="">Hosting resources </a></li>
+            <li><a href="">Community forum </a></li>
+            <li><a href="">Hosting responsibly </a></li>
+            <li><a href="">Join a free Hosting class </a></li>
+          </ul>
+          <ul>
+            <li class="con05_li">Airbnb</li>
+            <li><a href="">Newsroom </a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Investors</a></li>
+            <li><a href="">Airbnb.org emergency stays </a></li>
+            <li><a href="">Airbnb.org emergency stays </a></li>
+          </ul>
+        </div>
+        <hr class="hr03">
+        <div class="last-con">
+          <div class="last-left">
+            <ul>
+              <li><a href="">@2024 Airbnb, Inc.</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Sitemap</a></li>
+              <li><a href="">Company details</a></li>
+            </ul>
+          </div>
+          <div class="last-right">
+            <ul>
+              <li><i class="fa-solid fa-globe last_icon01"></i> English (IN)    </li>
+              <li><i class="fa-solid fa-indian-rupee-sign last_icon01"></i> INR</li>
+              <li>
+                <a href=""><i class="fa-brands fa-square-facebook last_icon03"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-square-twitter last_icon03"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-square-instagram last_icon03"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
